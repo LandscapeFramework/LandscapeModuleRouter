@@ -8,6 +8,10 @@
         {
             $this->routes = $r;
         }
+        public function getRoutes()
+        {
+            return $this->routes;
+        }
         public function addRoute($pattern, $func)
         {
             $this->routes[] = Array($pattern, $func);
